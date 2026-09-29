@@ -1,7 +1,7 @@
 class Animal:
     alive = []
 
-    def __init__(self, name: str) -> None:
+    def __init__(self, name: str, health: int = 100) -> None:
         self.name = name
         self.health = 100
         self.hidden = False
@@ -10,7 +10,7 @@ class Animal:
     def __repr__(self) -> str:
         return (
             f"{{Name: {self.name}, Health: {self.health}, "
-            f"{{Hidden: {self.hidden}}}"
+            f"Hidden: {self.hidden}}}"
         )
 
 
